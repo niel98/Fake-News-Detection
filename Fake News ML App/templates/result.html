@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Result</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="brandName">
+          Pied Piper
+        </div>
+          <h2>Fake News Checker</h2>
+      </div>
+    </header>
+    <p style="color:blue; font-size:20; text-align:center"><b>News Article Result</b></p>
+    <div class="results">
+
+      {% if prediction == 1 %}
+      <h2 style="color:blue">TRUE/REAL</h2>
+      {%  elif prediction == 0  %}
+      <h2 style="color:red">FAKE</h2>
+      {%  endif %}
+      
+    </div>
+  </body>
+</html>

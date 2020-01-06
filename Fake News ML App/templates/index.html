@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fake News Checker</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="brandName">
+          Pied Piper
+        </div>
+          <h2>Fake News Checker</h2>
+      </div>
+    </header>
+
+    <div class="ml-container">
+      <form class="form-check" action="{{ url_for('predict') }}" method="POST">
+        <p>Paste News Article Here</p>
+        <textarea name="article" rows="8" cols="80"></textarea>
+        <br>
+        <input type="submit" name="button-submit" class="btn-danger" value="Check">
+      </form>
+    </div>
+  </body>
+</html>
